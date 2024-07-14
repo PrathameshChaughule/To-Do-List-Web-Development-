@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/to-do-list.png">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="heading">
+        <h2>TO DO LIST</h2>
+    </div>
+    <div class="box">
+        <section class="left-side-bar">
+            <h2>DOIT</h2>
+            <span>TASK MANAGER</span>
+            <div class="icon">
+                <div class="icon1">
+                    <i class="bx bx-home active"></i>
+                    <i class="bx bx-grid-alt"></i>
+                    <i class="bx bx-bell"></i>
+                    <i class="bx bx-heart"></i>
+                    <i class="bx bxs-doughnut-chart"></i>
+                    <i class="bx bx-message-square-detail"></i>
+                </div>
+                <div class="icon2">
+                    <i class="bx bx-log-out"></i>
+                    <i class="bx bx-cog"></i>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="mid-part">
+            <div class="search">
+                <input type="search" name="" id="">
+                <i class="bx bx-search"></i>
+            </div>
+            <div class="main">
+                <div class="to-do-list show-category">
+                    <div class="task-screen">
+                        <div class="category-detail">
+                            <img src="images/boy.png" id="category-img" alt="">
+                            <div class="detail">
+                                <p class="category-tasks">8 Tasks</p>
+                                <h2 class="category-title">Personal</h2>
+                            </div>
+                        </div>
+                        <div class="tasks-wrapper">
+                            <div class="tasks">
+                                <div class="task-wrapper">
+                                    <label for="task" class="task">
+                                        <input type="checkbox" name="task" id="task" />
+                                        <span class="checkmark"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M4.5 12.75l6 6 9-13.5" />
+                                            </svg>
+                                        </span>
+                                        <p>Buy a new car</p>
+                                    </label>
+                                    <div class="delete">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="black-backdrop"></div>
+                    <div class="add-task">
+                        <div class="add-task-backdrop"></div>
+                        <h1 class="heading1">Add Task</h1>
+                        <div class="input-group">
+                            <label for="task-input">Task</label>
+                            <input type="text" id="task-input" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="task-input">Category</label>
+                            <select name="" id="category-select"></select>
+                        </div>
+                        <div class="btns">
+                            <button class="cancel-btn">Cancel</button>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+                    <div class="add-task-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="cat-graph">
+                    <div class="category-wrapper">
+                        <div class="categories">
+                            <div class="category">
+                                <div class="top">
+                                    <img src="images/boy.png" alt="">
+                                    <div class="content1">
+                                        <h3>Personal</h3>
+                                        <p>5 Tasks</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <canvas id="barchart" width="50" height="50"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="right-side-bar">
+            <div class="top">
+                <img src="images/1.png" alt="">
+                <div class="content2">
+                    <h1>Hello <br> Prathamesh</h1>
+                    <p>Today you have <span class="totalTasks">5</span> tasks.</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <header>
+                    <p class="current-date"></p>
+                    <div class="icons">
+                        <span id="prev" class="left"><i class="bx bx-chevron-left"></i></span>
+                        <span id="next" class="right"><i class="bx bx-chevron-right"></i></span>
+                    </div>
+                </header>
+                <div class="calendar">
+                    <ul class="weeks">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                    </ul>
+                    <ul class="days"></ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
