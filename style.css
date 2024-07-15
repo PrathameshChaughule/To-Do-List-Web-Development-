@@ -507,59 +507,6 @@ button.add-btn {
 }
 
 
-
-
-
-
-
-/* Graph ------------------------------------------------------------------*/
-
-canvas{
-    height: 275px !important;
-    width: 382px !important;
-    /*background: linear-gradient(to bottom, #c09dfd, #968afe, #767cfd);*/
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Right Side Bar ---------------------------------------------------------------------------------------*/
 
 .right-side-bar {
@@ -577,33 +524,44 @@ canvas{
 
 .right-side-bar img{
     border-radius: 50%;
-    margin-top: 20px;
-    width: 150px;
+    margin-top: 70px;
+    width: 200px;
     box-shadow: 0 0 10px #0ef;
     border: 3px solid #0ef;
 }
 
+.totalTasks{
+    color: orangered;
+    font-weight: 600;
+}
+
 .content2{
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .content2 h1{
     font-weight: 700;
     font-size: 30px;
+    
 }
-
-.content2 p{
+.hello{
+    color: #0502e0;
     margin-bottom: 10px;
+}
+.content2 p{
+    margin: 20px 0;
     font-size: 20px;
     color: #2e2e2e;
 }
 /* Calender -----------------------------------------------------------------*/
 .wrapper{
-    width: 280px;
-    background: white;
-    border-radius: 10px;
-    margin: auto;
-    padding: 5px;
+    background-color: white;
+    width: 400px;
+    height: 279px;
+    margin: 10px 30px 0 15px;
+    border-radius: 20px;
+    color: black;
+    padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.147);
 }
 
@@ -612,6 +570,7 @@ canvas{
     align-items: center;
     padding: 0 30px 5px;
     justify-content: space-between;
+    margin-bottom: 5px;
 }
 
 header .current-date{
@@ -650,7 +609,8 @@ header .icons span:last-child{
 }
 
 .calendar .weeks li{
-    font-weight: 500;
+    font-weight: 600;
+    color: #0502e0;
 }
 
 .calendar .days li{
@@ -689,7 +649,7 @@ header .icons span:last-child{
 }
 
 .days li.active::before{
-    background: #985986;
+    background: #0502e0;
 }
 
 
@@ -723,8 +683,14 @@ header .icons span:last-child{
     .cat-graph .category-wrapper {
         height: 269px;
     }
-    .cat-graph .bar{
+    .wrapper{
         height: 208px;
+    }
+    .wrapper header{
+        margin-bottom: -4px;
+    }
+    .calendar .days li{
+        margin-top: 7px;
     }
     canvas {
         height: 204px !important;
@@ -775,13 +741,15 @@ header .icons span:last-child{
         overflow: auto;
         white-space: nowrap;
     }
-    
+    .task-wrapper{
+        border-radius: 0px;
+    }
 
     body{
-        height: 750px;
+        height: 100vh;
         overflow: hidden;
     }
-    .bar{
+    .wrapper{
         display: none;
     }
     .categories{
