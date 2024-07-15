@@ -15,7 +15,7 @@ This project is a simple To-Do List web application built using HTML, CSS, and J
 **JavaScript:** Interactive functionality for the cart and menu.
 
 ## Demo
-Check out the live demo of the project [here](https://prathameshchaughule.github.io/E-commerce-Product-Page/)
+Check out the live demo of the project [here](https://prathameshchaughule.github.io/To-Do-List-Web-Development-/)
 
 ## Screenshots
 ![1](Screenshot/Screenshot1.png)
