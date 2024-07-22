@@ -26,8 +26,8 @@
 
 
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background: linear-gradient(to right, #efb6fe, #b5b5fd, #addbf6) no-repeat;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .box {
-    max-height: 100%;
+    height: 730px;
     width: 90vw;
     margin: auto;
     background-color: #e4e4f88c;
@@ -48,13 +48,14 @@ body {
     box-shadow: 0 0 10px rgba(69, 65, 65, 0.3);
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 
 
 /* Left Side Bar -----------------------------------------------------------------------------------------*/
 
 .left-side-bar {
-    max-height: 90vh;
+    max-height: 730px;
     width: 85px;
     background-color: rgba(255, 255, 255, 0.633);
     border-top-left-radius: 30px;
@@ -510,7 +511,7 @@ button.add-btn {
 /* Right Side Bar ---------------------------------------------------------------------------------------*/
 
 .right-side-bar {
-    height: 90vh;
+    height: 730px;
     width: 300px;
     background-color: rgba(255, 255, 255, 0.633);
     right: 0;
@@ -661,6 +662,9 @@ header .icons span:last-child{
 }
 
 @media(max-width:1375px){
+    body{
+        height: 106vh;
+    }
     .right-side-bar{
         display: none;
     }
@@ -698,6 +702,9 @@ header .icons span:last-child{
 }
 
 @media(max-width:1014px){
+    body{
+        height: 105vh;
+    }
     .box{
         flex-direction: column;
         width: 753px;
@@ -746,8 +753,7 @@ header .icons span:last-child{
     }
 
     body{
-        height: 100vh;
-        overflow: hidden;
+        height: 110vh;
     }
     .wrapper{
         display: none;
