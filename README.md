@@ -18,7 +18,6 @@ This project is a simple To-Do List web application built using HTML, CSS, and J
 Check out the live demo of the project [here](https://prathameshchaughule.github.io/To-Do-List-Web-Development-/)
 
 ## Screenshots
-![1](Screenshot/Screenshot1.png)
 ![2](Screenshot/Screenshot2.png)
 ![3](Screenshot/Screenshot3.png)
 
